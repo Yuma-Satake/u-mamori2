@@ -5,7 +5,7 @@ import { WeatherDisplay } from "@/components/WeatherDisplay";
 import { useWeather } from "@/lib/hooks/useWeather";
 
 export default function Home() {
-	const { current, nextHourHeadacheRisk, loading, error } = useWeather();
+	const { current, nextHourHeadacheRisk, loading } = useWeather();
 
 	// 頭痛リスクに基づいてサークルの色を決定
 	const getCircleColor = () => {
@@ -40,10 +40,7 @@ export default function Home() {
 
 	return (
 		// Mobile-first container mimicking a phone screen.
-		<div
-			className="mx-auto max-w-[420px] min-h-screen bg-white flex flex-col font-[family-name:var(--font-geist-sans)]"
-			aria-label="Fitbit Premium Dashboard"
-		>
+		<div className="mx-auto max-w-[420px] min-h-screen bg-white flex flex-col font-[family-name:var(--font-geist-sans)] p-2">
 			{/* App bar */}
 			<header className="relative flex items-center justify-between py-4 px-3">
 				{/* Leading icons & info */}
