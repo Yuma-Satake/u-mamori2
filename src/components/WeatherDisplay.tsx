@@ -82,7 +82,7 @@ export function WeatherDisplay({
 					</div>
 				)}
 				<span className="text-xs text-zinc-500">
-					{headacheRisk ? "頭痛リスク" : "-"}
+					{headacheRisk ? "Next" : "-"}
 				</span>
 			</div>
 		</div>
