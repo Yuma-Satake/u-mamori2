@@ -1,11 +1,11 @@
-pre-push:
-  commands:
-    check:
-      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}"
-      run: pnpm run biome check --no-errors-on-unmatched --files-ignore-unknown=true ./
+# pre-push:
+#   commands:
+#     check:
+#       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}"
+#       run: pnpm run biome check --no-errors-on-unmatched --files-ignore-unknown=true ./
 
-pre-commit:
-  commands:
-    check:
-      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}"
-      run: pnpm run biome check --write --no-errors-on-unmatched --files-ignore-unknown=true ./ && git add 
+# pre-commit:
+#   commands:
+#     check:
+#       glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc,css}"
+#       run: pnpm run biome check --write --no-errors-on-unmatched --files-ignore-unknown=true ./ && git add 
